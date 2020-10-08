@@ -43,10 +43,10 @@
                     </div>
                 </div>
                 {{ content }}
-                {% if {{ page.author }} == "Will" %}
+                {% if "{{ page.author }}" == "Will" %}
                   {% include about_will.html %}
                 {% endif %}
-                {% if {{ page.author }} == "Candy" %}
+                {% if "{{ page.author }}" == "Candy" %}
                   {% include about_candy.html %}
                 {% endif %}
                 <!--                <div class="comment-form-section">-->
