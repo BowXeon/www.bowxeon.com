@@ -1,3 +1,6 @@
 .idea/
-debug.sh
 _site/
+Gemfile.lock
+.jekyll-cache/
+.jekyll-metadata
+debug.sh

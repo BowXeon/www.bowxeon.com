@@ -1,8 +1,15 @@
 ---
 layout: default
 title: 闲话保险
+author: Will
 ---
 
 <h3>Welcome to Truth & Insurance</h3>
 
+<h4>{{ page.author }}</h4>
+{% assign sort_posts = site.posts | sort_natural: 'date' | reverse %}
+{% for post in sort_posts %}
+<p>{{ post.title }}</p>
+<p>{{ post.url }}</p>
+{% endfor %}
 

@@ -3,7 +3,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="pingback" href="https://www.baoxian-sz.com/xmlrpc.php">
+
+    {% if page.title %}
     <title>{{ page.title }} - 真心话险</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+
     <link rel='dns-prefetch' href='//www.baoxian-sz.com'/>
     <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
     <link rel='dns-prefetch' href='//s.w.org'/>
@@ -31,10 +37,9 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
-
     </style>
     <link rel='stylesheet' id='wp-block-library-css'
-          href='assets/css/block-library/style.min.css?ver=5.3.4' type='text/css'
+          href='/assets/css/block-library/style.min.css?ver=5.3.4' type='text/css'
           media='all'/>
     <link rel='stylesheet' id='appointment-style-css'
           href='/assets/css/appointment-blue/style.css?ver=5.3.4' type='text/css'
@@ -87,8 +92,6 @@ img.emoji {
             src='/assets/js/appointment/page-scroll.js?ver=5.3.4'></script>
     <script type='text/javascript'
             src='/assets/js/appointment/carousel.js?ver=5.3.4'></script>
-<!--    <link rel='https://api.w.org/' href='https://www.baoxian-sz.com/index.php?rest_route=/'/>-->
-<!--    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.baoxian-sz.com/xmlrpc.php?rsd"/>-->
     <link rel="wlwmanifest" type="application/wlwmanifest+xml"
           href="/assets/wlwmanifest.xml"/>
     <link rel='prev' title='被世人曲解的 996' href='https://www.baoxian-sz.com/?p=203'/>
