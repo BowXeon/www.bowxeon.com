@@ -10,8 +10,8 @@
         <div class="row">
             <!-- Blog Area -->
             <div class="col-md-8">
-		    <div id="post-{{ page.date | date: '%Y-%m-%d' }}"
-	   class="blog-lg-area-left post-{{ page.date | date: '%Y-%m-%d' }} post type-post status-publish format-standard has-post-thumbnail hentry category-freestyle">
+		    <div id="post-{{ page.date | split: ' ' | first }}"
+	   class="blog-lg-area-left post-{{ page.date | split: ' ' | first }} post type-post status-publish format-standard has-post-thumbnail hentry category-freestyle">
                     <div class="media">
                         <!--show date of post-->
                         <aside class="blog-post-date-area">
