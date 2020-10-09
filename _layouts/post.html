@@ -14,6 +14,11 @@
                      class="blog-lg-area-left post-blog post type-post status-publish format-standard has-post-thumbnail hentry category-freestyle">
                     <div class="media">
                         <!--show date of post-->
+                        <aside class="blog-post-date-area">
+                            <div class="date">{{ page.date | date: '%d' }}
+                                <div class="month-year">{{ page.date | date: '%m' }}月,{{ page.date | date: '%Y' }}</div>
+                            </div>
+                        </aside>
                         <div class="media-body">
                             <div class="blog-lg-box">
                                 <a class="img-responsive" href="#"
