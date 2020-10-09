@@ -9,7 +9,7 @@ author: Will
     <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
         <p>{{ post.date }}</p>
-        <p>{{ post.date | date: '%Y' }}</p>
+        <p>{{ post.tags | size }}</p>
     </li>
     {% endfor %}
 </ul>
