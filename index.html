@@ -5,11 +5,7 @@ author: Will
 ---
 
 {% for post in site.posts %}
-<p>{{ post.title }}</p>
-<p>{{ post.url }}</p>
-<p>{{ post.path }}</p>
-<p>{{ post.name }}</p>
-<p>{{ post.id }}</p>
+<a href="{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
 
 
