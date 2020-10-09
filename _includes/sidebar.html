@@ -9,7 +9,7 @@
         <div class="sidebar-widget">
             <div class="sidebar-widget-title"><h3>近期文章</h3></div>
             <ul>
-                {% assign sort_posts = site.posts | sort_natural: 'date' | reverse %}
+                {% assign sort_posts = site.posts | sort_natural: 'date' %}
                 {% for post in sort_posts %}
                 <li>
                     <a href="{{ post.url }}">{{ post.title }}</a>
