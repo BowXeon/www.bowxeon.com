@@ -4,13 +4,12 @@ title: 闲话保险
 author: Will
 ---
 
-{% for post in sort_posts %}
+{% for post in site.posts %}
 <p>{{ post.title }}</p>
 <p>{{ post.url }}</p>
 <p>{{ post.path }}</p>
 <p>{{ post.name }}</p>
 <p>{{ post.id }}</p>
-
 {% endfor %}
 
 
