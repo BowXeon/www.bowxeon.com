@@ -10,53 +10,51 @@
         <div class="row">
             <!-- Blog Area -->
             <div class="col-md-8">
-		    <div id="post-blog"
-	   class="blog-lg-area-left post-blog post type-post status-publish format-standard has-post-thumbnail hentry category-freestyle">
+                <div id="post-blog"
+                     class="blog-lg-area-left post-blog post type-post status-publish format-standard has-post-thumbnail hentry category-freestyle">
                     <div class="media">
                         <!--show date of post-->
                         <div class="media-body">
                             <div class="blog-lg-box">
                                 <a class="img-responsive" href="#"
-							  title="{{ page.title }}">
-       <!--                             <img width="950" height="290"
-						     src="/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}.jpeg"
-                                         class="img-responsive wp-post-image" alt=""
-									      srcset="/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}.jpeg 950w, /assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}.jpeg 300w, /assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}.jpeg 768w"
-	       sizes="(max-width: 950px) 100vw, 950px"/>-->
+                                   title="{{ page.title }}">
+                                    <img width="950" height="290"
+                                                          src="/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}.jpeg"
+                                                                      class="img-responsive wp-post-image" alt=""
+                                                                       srcset="/assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}.jpeg 950w, /assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}.jpeg 300w, /assets/img/blog/{{ page.date | date: '%Y-%m-%d' }}.jpeg 768w"
+                                        sizes="(max-width: 950px) 100vw, 950px"/>
                             </div>
                             <div class="blog-post-lg">
                                 <a href="/?author=1"><img alt=''
-				   src='/assets/img/author/{{ page.author }}.png'
-				   srcset='/assets/img/author/{{ page.author }}.png 2x'
-                                                                                    class='img-responsive img-circle avatar-40 photo'
-                                                                                    height='40' width='40'/></a>
-				作者<a href="/?author=1">{{ page.author }}</a>
+                                                          src='/assets/img/author/{{ page.author }}.png'
+                                                          srcset='/assets/img/author/{{ page.author }}.png 2x'
+                                                          class='img-responsive img-circle avatar-40 photo'
+                                                          height='40' width='40'/></a>
+                                作者<a href="/?author=1">{{ page.author }}</a>
                             </div>
-			    <h3>{{ page.title }}</h3>
-                {{ content }}
+                            <h3>{{ page.title }}</h3>
+                            {{ content }}
                         </div>
                     </div>
                 </div>
 
-<!--Blog Author-->
-<div class="comment-title"><h3>关于作者</h3></div>
-<div class="blog-author">
-    <div class="media">
-        <div class="pull-left">
-            <img alt=''
-	     src='/assets/img/author/{{ page.author }}.png'
-	     srcset='/assets/img/author/{{ page.author }}.png 2x'
-                 class='img-responsive img-circle avatar-200 photo' height='120' width='120'/></div>
-                {% if page.author == "Will" %}
-                {% include about_will.html %}
-
-                {% elsif page.author == "Candy" %}
-                {% include about_candy.html %}
-
-                {% endif %}
-    </div>
-</div>
-<!--/Blog Author-->
+                <!--Blog Author-->
+                <div class="comment-title"><h3>关于作者</h3></div>
+                <div class="blog-author">
+                    <div class="media">
+                        <div class="pull-left">
+                            <img alt=''
+                                 src='/assets/img/author/{{ page.author }}.png'
+                                 srcset='/assets/img/author/{{ page.author }}.png 2x'
+                                 class='img-responsive img-circle avatar-200 photo' height='120' width='120'/></div>
+                        {% if page.author == "Will" %}
+                        {% include about_will.html %}
+                        {% elsif page.author == "Candy" %}
+                        {% include about_candy.html %}
+                        {% endif %}
+                    </div>
+                </div>
+                <!--/Blog Author-->
 
 
                 <!--                <div class="comment-form-section">-->
