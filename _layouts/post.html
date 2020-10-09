@@ -40,14 +40,12 @@
                                          height='40' width='40'/>
                                 </a>
                                 作者<a href="/?author={{ page.author }}">{{ page.author }}</a>
-                                {% if page.tags | size != 0 %}
                                 <div class="blog-tags-lg">
                                     <i class="fa fa-tags"></i>
                                     {% for tag in page.tags %}
                                     <a href="/?tag={{ tag }}" rel="tag">{{ tag }}</a>&nbsp;
                                     {% endfor %}
                                 </div>
-                                {% endif %}
                             </div>
                             <h3>{{ page.title }}</h3>
                             {{ content }}
