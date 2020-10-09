@@ -41,7 +41,7 @@
                                     {% if page.tags %}
                                     <i class="fa fa-tags"></i>
                                     {% for tag in page.tags %}
-                                    <a href="/?tag={{ tag }}" rel="tag">{{ tag }}</a>&nbsp;
+                                    <a href="/?tag={{ tag | url_encode }}" rel="tag">{{ tag }}</a>&nbsp;
                                     {% endfor %}
                                     {% endif %}
                                 </div>

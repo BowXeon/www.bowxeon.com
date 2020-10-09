@@ -9,7 +9,7 @@
         <div class="sidebar-widget">
             <div class="sidebar-widget-title"><h3>近期文章</h3></div>
             <ul>
-                {% for post in site.posts %}
+                {% for post in site.posts limit: 5 %}
                 <li>
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>
