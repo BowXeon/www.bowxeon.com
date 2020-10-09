@@ -38,7 +38,7 @@
                                                           height='40' width='40'/></a>
                                 作者<a href="/?author=1">{{ page.author }}</a>
                                 <div class="blog-tags-lg">
-                                    {% if page.tags %}
+                                    {% if page.tags | size > 0 %}
                                     <i class="fa fa-tags"></i>
                                     {% for tag in page.tags %}
                                     <a href="/?tag={{ tag }}" rel="tag">{{ tag }}</a>&nbsp;
