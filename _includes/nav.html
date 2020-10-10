@@ -20,6 +20,53 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul id="menu-blog" class="nav navbar-nav navbar-right">
+                {% if page.title == '闲话保险' %}
+                <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-6 active">
+                    <a href="#">首页</a>
+                </li>
+                {% else %}
+                <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
+                    <a href="/">首页</a>
+                </li>
+                {% endif %}
+                {% if '标签：意外险' in page.title %}
+                <li id="menu-item-79" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-79 active">
+                    <a href="/tag/意外险">意外险</a>
+                </li>
+                {% else %}
+                <li id="menu-item-79" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79">
+                    <a href="/tag/意外险">意外险</a>
+                </li>
+                {% endif %}
+                {% if '标签：医疗险' in page.title %}
+                <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-76 active">
+                    <a href="/tag/医疗险">医疗险</a>
+                </li>
+                {% else %}
+                <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76">
+                    <a href="/tag/医疗险">医疗险</a>
+                </li>
+                {% endif %}
+                {% if '标签：重疾险' in page.title %}
+                <li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-78 active">
+                    <a href="/tag/重疾险">重疾险</a>
+                </li>
+                {% else %}
+                <li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78">
+                    <a href="/tag/重疾险">重疾险</a>
+                </li>
+                {% endif %}
+                {% if '标签：寿险' in page.title %}
+                <li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-77 active">
+                    <a href="/tag/寿险">寿险</a>
+                </li>
+                {% else %}
+                <li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77">
+                    <a href="/tag/寿险">寿险</a>
+                </li>
+                {% endif %}
+            </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
