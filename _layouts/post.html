@@ -32,18 +32,18 @@
                                 </a>
                             </div>
                             <div class="blog-post-lg">
-                                <a href="/?author={{ page.author }}">
+                                <a href="/author/{{ page.author | downcase }}">
                                     <img alt=''
                                          src='/assets/img/author/{{ page.author }}.png'
                                          srcset='/assets/img/author/{{ page.author }}.png 2x'
                                          class='img-responsive img-circle avatar-40 photo'
                                          height='40' width='40'/>
                                 </a>
-                                作者<a href="/?author={{ page.author }}">{{ page.author }}</a>
+                                作者<a href="/author/{{ page.author | downcase }}">{{ page.author }}</a>
                                 <div class="blog-tags-lg">
                                     <i class="fa fa-tags"></i>
                                     {% for tag in page.tags %}
-                                    <a href="/?tag={{ tag }}" rel="tag">{{ tag }}</a>&nbsp;
+                                    <a href="/tag/{{ tag }}" rel="tag">{{ tag }}</a>&nbsp;
                                     {% endfor %}
                                 </div>
                             </div>
