@@ -8,7 +8,7 @@
     {% elsif page.title contains '作者' %}
     <title>{{ page.author }} - {{ site.title }}</title>
     {% elsif page.title contains '标签' %}
-    <title>{{ page.tag }} - {{ site.title }}</title>
+    <title>{{ page.tags[0] }} - {{ site.title }}</title>
     {% else %}
     <title>{{ page.title }} - {{ site.title }} </title>
     {% endif %}
