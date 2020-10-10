@@ -54,13 +54,14 @@ title: 闲话保险
     <div class="media">
         <!--show date of post-->
         <aside class="blog-post-date-area">
-            <div class="date">保
+            <div class="date">
+                <i class="fa fa-send"></i>
                 <div class="month-year">更多文章</div>
             </div>
         </aside>
         <div class="media-body">
             {% for post in site.posts %}
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
             <div class="blog-post-lg">
                 <div class="blog-tags-lg">
                     <i class="fa fa-tags"></i>
