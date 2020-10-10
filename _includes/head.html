@@ -6,11 +6,11 @@
     {% if page.title == '闲话保险' %}
     <title>{{ site.title }}</title>
     {% elsif page.title contains '作者' %}
-    <title>{{ page.author }} - 真心话险</title>
+    <title>{{ page.author }} - {{ site.title }}</title>
     {% elsif page.title contains '标签' %}
-    <title>{{ page.tag }} - 真心话险</title>
+    <title>{{ page.tag }} - {{ site.title }}</title>
     {% else %}
-    <title>{{ page.title }} - 真心话险</title>
+    <title>{{ page.title }} - {{ site.title }} </title>
     {% endif %}
 
     <link rel='dns-prefetch' href='//www.baoxian-sz.com'/>
