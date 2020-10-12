@@ -57,3 +57,4 @@ exclude:
   - vendor/ruby/
   - README.md
   - Dockerfile
+  - tool/
