@@ -53,23 +53,31 @@
                     </div>
                 </div>
 
-                <!--Blog Author-->
-                <div class="comment-title"><h3>关于作者</h3></div>
-                <div class="blog-author">
+                <div id="post-list"
+                     class="blog-lg-area-left post-list post type-post status-publish format-standard has-post-thumbnail hentry category-freestyle">
                     <div class="media">
-                        <div class="pull-left">
-                            <img alt=''
-                                 src='/assets/img/author/{{ page.author }}.png'
-                                 srcset='/assets/img/author/{{ page.author }}.png 2x'
-                                 class='img-responsive img-circle avatar-200 photo' height='120' width='120'/></div>
-                        {% if page.author == "Will" %}
-                        {% include about_will.html %}
-                        {% elsif page.author == "Candy" %}
-                        {% include about_candy.html %}
-                        {% endif %}
+                        <!--show date of post-->
+                        <aside class="blog-post-date-area">
+                            <div class="date">
+                                <i class="fa fa-send"></i>
+                                <div class="month-year">相关推荐</div>
+                            </div>
+                        </aside>
+                        <div class="media-body">
+                            <ul>
+                                {% for post in site.posts %}
+                                {% for tag in page.tags %}
+                                {% if post.tags contains tag %}
+                                <li>
+                                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!--/Blog Author-->
             </div>
             <!-- /Blog Area -->
             {% include sidebar.html%}
