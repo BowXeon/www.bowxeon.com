@@ -9,7 +9,7 @@ do
         [[ -f tag/$tag.md ]] || {
             cat <<EOF > tag/$tag.md
 ---
-layout: $tag
+layout: tag
 title: "标签：$tag"
 tags:
   - $tag
