@@ -37,14 +37,16 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-	font-family: 'Open Sans';
-	font-weight:400;
-	color: #242526;
-	margin: 0 0 20px;
+    font-family: '微软雅黑, Consolas, Inconsolata, Courier, monospace, Open Sans';
+    font-size: 1.4em;
+	font-weight:bold;
+	color: #395ca3;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #395ca3;
 }
 p, .textwidget {
 	color: #727272;
-    font-family: 'Open Sans';
+    font-family: '微软雅黑, Consolas, Inconsolata, Courier, monospace, Open Sans';
     font-size: 15px;
 	font-weight:400;
     letter-spacing: 0.2px;
@@ -121,7 +123,8 @@ li > ul, li > ol, blockquote > ul, blockquote > ol {
 }
 /* Blockquote*/
 blockquote { background-color: #f2f2f2; font-family: 'Dosis'; margin: 0 0 20px; padding: 15px 25px; }
-blockquote, blockquote p { font-size: 18px; font-style: italic; font-weight: 500; line-height: 30px; letter-spacing: 1px; }
+/* blockquote, blockquote p { font-size: 18px; font-style: italic; font-weight: 500; line-height: 30px; letter-spacing: 1px; } */
+blockquote, blockquote p { font-style: italic; font-weight: 500; }
 blockquote cite, blockquote small { color: #242526; font-size: 15px; display: block; line-height: 20px; padding-top: 15px; }
 blockquote em, blockquote i, blockquote cite { font-style: normal; }
 blockquote strong, blockquote b { font-weight: 600; }
