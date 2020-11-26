@@ -10,6 +10,7 @@ do
             cat <<EOF > tag/$tag.md
 ---
 layout: tag
+sitemap: false
 title: "标签：$tag"
 tags:
   - $tag
