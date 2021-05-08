@@ -3,11 +3,11 @@
     <div class="sidebar-section-right">
         <div class="sidebar-widget">
             <form action="/search/tag" method="get">
-                <input type="text" class="search_widget_input" name="t" id="t" placeholder="搜索标签"/>
+                <input type="text" class="search_widget_input" name="t" id="t" placeholder="搜索主题"/>
             </form>
             <br>
             <div class="blog-tags-lg">
-                <p>热门标签  <i class="fa fa-tags"></i></p>
+                <p>热门主题  <i class="fa fa-tags"></i></p>
                 {% for tag in site.tags %}
                 <a style="color: grey;" href="/tag/{{ tag[0] }}" rel="tag">{{ tag[0] }}</a>&nbsp;
                 {% endfor %}

@@ -5,11 +5,11 @@
         <div class="navbar-header">
             <h1>
                 <a class="navbar-brand" href="#" title="真心话险">
-
                     <img class="img-responsive"
-                         src="//bowxeon.gitee.io/www.baoxian-sz.com/assets/img/logo_logo_zhenxinhuaxian_tiw_600_150.png"
+                         src="{{ site.path.img }}/logo_logo_zhenxinhuaxian_tiw_600_150.png"
                          style="height:50px; width:200px;" alt="真心话险"/>
-                </a></h1>
+                </a>
+            </h1>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">切换导航</span>
@@ -30,7 +30,7 @@
                     <a href="/">首页</a>
                 </li>
                 {% endif %}
-                {% if page.title contains '标签：意外险' %}
+                {% if page.title contains '主题：意外险' %}
                 <li id="menu-item-79" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-79 active">
                     <a href="/tag/意外险">意外险</a>
                 </li>
@@ -39,7 +39,7 @@
                     <a href="/tag/意外险">意外险</a>
                 </li>
                 {% endif %}
-                {% if page.title contains '标签：医疗险' %}
+                {% if page.title contains '主题：医疗险' %}
                 <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-76 active">
                     <a href="/tag/医疗险">医疗险</a>
                 </li>
@@ -48,7 +48,7 @@
                     <a href="/tag/医疗险">医疗险</a>
                 </li>
                 {% endif %}
-                {% if page.title contains '标签：重疾险' %}
+                {% if page.title contains '主题：重疾险' %}
                 <li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-78 active">
                     <a href="/tag/重疾险">重疾险</a>
                 </li>
@@ -57,7 +57,7 @@
                     <a href="/tag/重疾险">重疾险</a>
                 </li>
                 {% endif %}
-                {% if page.title contains '标签：寿险' %}
+                {% if page.title contains '主题：寿险' %}
                 <li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-77 active">
                     <a href="/tag/寿险">寿险</a>
                 </li>

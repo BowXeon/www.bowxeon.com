@@ -58,3 +58,12 @@ exclude:
   - README.md
   - Dockerfile
   - tool/
+
+path:
+  img: "//bowxeon.gitee.io/www.baoxian-sz.com/assets/img"
+  js: "//bowxeon.gitee.io/www.baoxian-sz.com/assets/js"
+  css: "//bowxeon.gitee.io/www.baoxian-sz.com/assets/css"
+copyright: |
+  版权归 <a href="//office.baoxian-sz.com"><b>真心话险事务所</b></a> 所有 <br/>
+  Copyright 2017-2020 Truth & Insurance
+beian: 苏ICP备18036961号-1

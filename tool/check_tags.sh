@@ -11,7 +11,7 @@ do
 ---
 layout: tag
 sitemap: false
-title: "标签：$tag"
+title: "主题：$tag"
 tags:
   - $tag
 ---
