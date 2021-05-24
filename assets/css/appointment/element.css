@@ -36,14 +36,14 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    font-family: '微软雅黑, Consolas, Inconsolata, Courier, monospace, Open Sans';
+    font-family: '-apple-system, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif';
     font-weight:400;
 	color: #242526;
 	margin: 0 0 20px;
 }
 
 h2, .h2 {
-    font-family: '微软雅黑, Consolas, Inconsolata, Courier, monospace, Open Sans';
+    font-family: '-apple-system, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif';
     font-size: 1.4em;
 	font-weight:bold;
 	color: #395ca3;
@@ -52,7 +52,7 @@ h2, .h2 {
 }
 p, .textwidget {
 	color: #727272;
-    font-family: '微软雅黑, Consolas, Inconsolata, Courier, monospace, Open Sans';
+    font-family: '-apple-system, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif';
     font-size: 15px;
 	font-weight:400;
     letter-spacing: 0.2px;
