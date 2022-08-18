@@ -58,10 +58,8 @@ exclude:
   - README.md
   - Dockerfile
   - tool/
-  - _config_docker.yml
-  - _posts
-  - tag
-  - more
+  - _config.yml
+  - assets
 
 path:
   img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"

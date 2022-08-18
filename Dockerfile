@@ -1,7 +1,7 @@
 FROM jekyll/jekyll:4 AS builder
 COPY . .
 RUN jekyll clean \
-    && jekyll build \
+    && jekyll build --config _config_docker.yml \
     && mv _site /html
 
 FROM nginx:1.16-alpine
