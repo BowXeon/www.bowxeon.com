@@ -24,7 +24,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   独立保险经纪人 - 真心话说保险
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.bowxeon.com" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
 github_username: seoktaehyeon
 
 # Build settings
@@ -67,7 +66,9 @@ path:
   img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"
   js: "//bowxeon.gitee.io/www.bowxeon.com/assets/js"
   css: "//bowxeon.gitee.io/www.bowxeon.com/assets/css"
-copyright: |
-  版权归 <a href="//office.bowxeon.com"><b>真心话险事务所</b></a> 所有 <br>
-  Copyright ©2017-2022 Truth & Insurance All Rights Reserved
+  fonts: "//bowxeon.gitee.io/www.bowxeon.com/assets/fonts"
+  posts: "//bowxeon.gitee.io/www.bowxeon.com/assets/posts"
+
+copyright: 2022
+
 beian: 苏ICP备18036961号-1
