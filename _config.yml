@@ -62,12 +62,49 @@ exclude:
   - tag
   - more
 
+# path:
+#   img: "/assets/img"
+#   js: "/assets/js"
+#   css: "/assets/css"
+#   fonts: "/assets/fonts"
+#   posts: "/assets/posts"
+
 path:
-  img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"
-  js: "//bowxeon.gitee.io/www.bowxeon.com/assets/js"
-  css: "//bowxeon.gitee.io/www.bowxeon.com/assets/css"
-  fonts: "//bowxeon.gitee.io/www.bowxeon.com/assets/fonts"
-  posts: "//bowxeon.gitee.io/www.bowxeon.com/assets/posts"
+ img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"
+ js: "//bowxeon.gitee.io/www.bowxeon.com/assets/js"
+ css: "//bowxeon.gitee.io/www.bowxeon.com/assets/css"
+ fonts: "//bowxeon.gitee.io/www.bowxeon.com/assets/fonts"
+ posts: "//bowxeon.gitee.io/www.bowxeon.com/assets/posts"
+
+theme_color_header: "#395ca3"
+theme_color_footer: "#f0f0f0"
+theme_color_footer_text: "#70757a"
+
+nav:
+  - title: 首页
+    id: null
+    url: '/'
+    target: ''
+  - title: 意外险
+    id: 'accident'
+    url: '/accident'
+    target: ''
+  - title: 医疗险
+    id: 'medical'
+    url: '/medical'
+    target: ''
+  - title: 重疾险
+    id: 'critical'
+    url: '/critical'
+    target: ''
+  - title: 寿险
+    id: 'life'
+    url: '/life'
+    target: ''
+  - title: 团财险
+    id: 'group'
+    url: '/group'
+    target: ''
 
 copyright: 2022
 

@@ -4,3 +4,4 @@ Gemfile.lock
 .jekyll-cache/
 .jekyll-metadata
 debug.sh
+.DS_Store

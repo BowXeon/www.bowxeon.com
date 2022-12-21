@@ -7,7 +7,8 @@
   <main class="flex-grow">
     <div class="vp-article vp-container vp-container--with-content-padding article full vp-article--wide">
       <div class="flex">
-        <div id="vp-js-desktop__navigation" class="vp-article__aside-left flex-none w-1/6 article__navigation hidden lg:block no-print">
+        <div id="vp-js-desktop__navigation"
+          class="vp-article__aside-left flex-none w-1/6 article__navigation hidden lg:block no-print">
         </div>
         <div id="article-content" class="vp-article__content-panel flex-auto mx-auto px-0 lg:mb-20 max-w-full">
           <article role="article">
@@ -29,45 +30,39 @@
                         团财险
                         {% endif %}
                       </a></li>
-                      {% if page.name != "index.md" %}
-                      <li class="breadcrumbs--active">
-                        <a href="#" target="_self" aria-current="page">{{ page.title }}</a>
-                      </li>
-                      {% endif %}
                     </ol>
                     <div class="breadcrumbs-wrapper__scroll-mask"></div>
                   </div>
                 </nav>
               </i18n-message>
-              <div style="margin: 0px 0 16px; width: 100%; display: inline-flex;">
-                 <a href="/author/{{ page.author | downcase }}" style="padding-right: 5px;">
-                   <img alt="" src="{{ site.path.img }}/author/{{ page.author | downcase }}.png" target="_blank" srcset="{{ site.path.img }}/author/{{ page.author | downcase }}.png 2x" height="40" width="40">
-                 </a>
-                 <p style="color: var(--vp-footer-text-color) !important; padding: 5px;">作者</p>
-                 <a class="font-bold mb-4" href="/author/{{ page.author | downcase }}" target="_blank" style="color: #242526; padding: 5px; text-decoration: none;">{{ page.author }}</a>
-                 <p style="color: var(--vp-footer-text-color) !important; padding: 5px;">{{ page.date | date: '%Y-%m-%d' }}</p>
-                 <div style="display: inline-block; margin: 0 15px 5px; padding: 5px;">
-                   <em style="color: var(--vp-footer-text-color) !important; padding: 5px; filter: grayscale(1);">🏷️</em>
-                   {% for tag in page.tags %}
-                   <a class="font-bold mb-4" href="/search?q={{ tag }}" rel="tag" style="color: #242526; padding: 5px 0px 5px 5px; text-decoration: none;">{{ tag }}</a>&nbsp;
-                   {% endfor %}
-                 </div>
-              </div>
-              <h1 class="vp-article__heading article__heading" role="heading"><span class="">{{ page.title }}</span></h1>
+              {% assign categoryPosts = site.posts | where_exp: "item", "item.categories[0] == page.categories[0]" %}
+              <h1 class="vp-article__heading article__heading" role="heading"><span class="">一共有 {{ categoryPosts.size }} 篇关于 {{ page.title }} 的文章</span></h1>
             </header>
-            <section class="page" id="content" role="main">
-              <div id="main-content" class="wiki-content article__content js-tocBot-content">
-                {{ content }}
+            <div class="vp-search-page">
+              <div data-vp-id="search-page-main" class="vp-search-page__main">
+                <div class="vp-search-page__main-inner">
+                  <ul id="results-ul" aria-label="Search results" data-vp-id="search-page-results" aria-live="polite" aria-atomic="false" class="contents m-0 p-0 list-none">
+                    {% for item in categoryPosts %}
+                    <li aria-label="Result">
+                      <div class="vp-search-result">
+                        <div class="vp-search-result__description">
+                          <em style="color: var(--vp-footer-text-color) !important; padding: 5px; filter: grayscale(1);">🏷️ </em>
+                          {{ item.tags | join: ", "}}
+                        </div>
+                        <h3 class="vp-search-result__title">
+                          <a rel="noopener" href="{{ item.url }}">{{ item.title }}</a>
+                        </h3>
+                        <p class="vp-search-result__description">{{ item.content | strip_html | truncate: 100 }}</p>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
               </div>
-            </section>
+            </div>
           </article>
         </div>
         <div class="vp-article__aside-right flex-none w-1/6 article__toc hidden xl:block no-print">
-          <div class="vp-scrollable-container vp-scrollable-container--hidden-scrollbars">
-            <div class="js-tocBot">
-              <ol class="toc-list"></ol>
-            </div>
-          </div>
         </div>
       </div>
     </div>
