@@ -43,24 +43,22 @@ timezone: Asia/Shanghai
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - README.md
-  - Dockerfile
-  - tool/
-  - _config_docker.yml
-  - _posts
-  - tag
-  - more
+include:
+  - _config.yml
+  - _layouts
+  - _includes
+  - assets/
+#DOCKER  - index.md
+#DOCKER  - search.md
+#DOCKER  - 404.md
+#DOCKER  - search.json
+#DOCKER  - pagetree.json
+#DOCKER  - insurance/
+#DOCKER  - accident/
+#DOCKER  - medical/
+#DOCKER  - critical/
+#DOCKER  - life/
+#DOCKER  - group/
 
 # path:
 #   img: "/assets/img"
@@ -106,6 +104,6 @@ nav:
     url: '/group'
     target: ''
 
-copyright: 2022
+copyright: COPYRIGHT_YEAR
 
 beian: 苏ICP备18036961号-1
