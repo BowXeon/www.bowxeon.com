@@ -10,10 +10,10 @@
             {% assign copyYear = "now" | date: "%Y" %}
             <span class="footer__attribution-line--copyright hc-footer-font-color">
                 <span class="no-print">
-                    <i18n-message i18nkey="footer.build.label">Build at {{ buildAt }}</i18n-message>
+                    <i18n-message i18nkey="">Build at {{ buildAt }}</i18n-message>
+                    •
                 </span>
                 <i18n-message i18nkey="footer.copyright.label"
-                    •
                     options="{ &quot;date&quot;: &quot;{{ copyYear }}&quot;, &quot;by&quot;: &quot;&quot; }">Copyright © 2017-{{ copyYear }}
                 </i18n-message>
                 <span class="no-print">
