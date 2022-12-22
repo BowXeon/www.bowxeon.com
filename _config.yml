@@ -73,7 +73,7 @@ path:
  js: "//bowxeon.gitee.io/www.bowxeon.com/assets/js"
  img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"
  posts: "//bowxeon.gitee.io/www.bowxeon.com/assets/posts"
- fonts: "/assets/fonts"
+ fonts: "//www.bowxeon.com/assets/fonts"
 
 theme_color_header: "#395ca3"
 theme_color_footer: "#f0f0f0"
@@ -104,7 +104,5 @@ nav:
     id: 'group'
     url: '/group'
     target: ''
-
-copyright: COPYRIGHT_YEAR
 
 beian: 苏ICP备18036961号-1
