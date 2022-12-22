@@ -74,6 +74,10 @@ path:
  img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"
  posts: "//bowxeon.gitee.io/www.bowxeon.com/assets/posts"
  fonts: "//www.bowxeon.com/assets/fonts"
+ logo:
+   favicon: "//bowxeon.gitee.io/www.bowxeon.com/assets/img/favicon.png"
+   header: "//bowxeon.gitee.io/www.bowxeon.com/assets/img/logo_text_white.svg"
+   footer: "//bowxeon.gitee.io/www.bowxeon.com/assets/img/logo_text.svg"
 
 theme_color_header: "#395ca3"
 theme_color_footer: "#f0f0f0"
