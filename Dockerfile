@@ -4,7 +4,6 @@ RUN sed -i 's/# EXCLUDE_IN_DOCKER//' _config.yml \
     && sed -i '/# EXCLUDE_IN_GITEE_PAGES/d' _config.yml \
     && copy_year=$(date | awk '{print $NF}') \
     && sed -i "s/COPYRIGHT_YEAR/$copy_year/" _config.yml \
-    && mkdir assets \
     && jekyll clean \
     && jekyll build \
     && mv _site /html
