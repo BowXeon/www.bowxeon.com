@@ -48,7 +48,11 @@ exclude:
   - .github
   - Gemfile
   - tool/
-# EXCLUDE_IN_DOCKER  - assets/
+# EXCLUDE_IN_DOCKER  - assets/css/
+# EXCLUDE_IN_DOCKER  - assets/js/
+# EXCLUDE_IN_DOCKER  - assets/img/
+# EXCLUDE_IN_DOCKER  - assets/posts/
+  - assets/fonts  # EXCLUDE_IN_GITEE_PAGES
   - _layouts      # EXCLUDE_IN_GITEE_PAGES
   - _includes     # EXCLUDE_IN_GITEE_PAGES
   - index.md      # EXCLUDE_IN_GITEE_PAGES
@@ -65,11 +69,11 @@ exclude:
   - author/       # EXCLUDE_IN_GITEE_PAGES
 
 path:
- img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"
- js: "//bowxeon.gitee.io/www.bowxeon.com/assets/js"
  css: "//bowxeon.gitee.io/www.bowxeon.com/assets/css"
- fonts: "//bowxeon.gitee.io/www.bowxeon.com/assets/fonts"
+ js: "//bowxeon.gitee.io/www.bowxeon.com/assets/js"
+ img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"
  posts: "//bowxeon.gitee.io/www.bowxeon.com/assets/posts"
+ fonts: "/assets/fonts"
 
 theme_color_header: "#395ca3"
 theme_color_footer: "#f0f0f0"
