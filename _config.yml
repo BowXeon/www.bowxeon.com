@@ -45,27 +45,20 @@ timezone: Asia/Shanghai
 #
 include:
   - _config.yml
-  - _layouts
-  - _includes
   - assets/
+#DOCKER  - _layouts
+#DOCKER  - _includes
 #DOCKER  - index.md
-#DOCKER  - search.md
-#DOCKER  - 404.md
-#DOCKER  - search.json
 #DOCKER  - pagetree.json
+#DOCKER  - search.md
+#DOCKER  - search.json
+#DOCKER  - 404.md
 #DOCKER  - insurance/
 #DOCKER  - accident/
 #DOCKER  - medical/
 #DOCKER  - critical/
 #DOCKER  - life/
 #DOCKER  - group/
-
-# path:
-#   img: "/assets/img"
-#   js: "/assets/js"
-#   css: "/assets/css"
-#   fonts: "/assets/fonts"
-#   posts: "/assets/posts"
 
 path:
  img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"

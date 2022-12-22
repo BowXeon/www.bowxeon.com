@@ -1,6 +1,7 @@
 FROM jekyll/jekyll:4 AS builder
 COPY . .
 RUN sed -i 's/#DOCKER//' _config.yml \
+    && sed -i 's#- assets/##' _config.yml \
     && copy_year=$(date | awk '{print $NF}') \
     && sed -i "s/COPYRIGHT_YEAR/$copy_year/" _config.yml \
     && jekyll clean \
