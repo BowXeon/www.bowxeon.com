@@ -71,7 +71,7 @@
             var contentSlice = obj.content.split(searchStr).slice(0,2);
             var contentSliceList = [
               contentSlice[0].substr(-20, 20),
-              contentSlice[1].substr(-20, 20)
+              contentSlice[1].substr(0, 20)
             ];
             resultItem.innerHTML = "<div class=\"vp-search-result\">\
               <div class=\"vp-search-result__description\"><em style=\"color: var(--vp-footer-text-color) !important; padding: 5px; filter: grayscale(1);\">🏷️ </em>" + obj.tag.split(searchStr).join("<em>" + searchStr + "</em>") + "</div>\
