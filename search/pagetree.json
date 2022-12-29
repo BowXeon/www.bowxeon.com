@@ -1,5 +1,0 @@
----
-categories:
-  - search
----
-{% include ptree.json %}
