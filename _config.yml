@@ -55,7 +55,6 @@ exclude:
   - assets/fonts  # EXCLUDE_IN_GITEE_PAGES
   - _layouts      # EXCLUDE_IN_GITEE_PAGES
   - _includes     # EXCLUDE_IN_GITEE_PAGES
-  - index.md      # EXCLUDE_IN_GITEE_PAGES
   - pagetree.json # EXCLUDE_IN_GITEE_PAGES
   - 404.md        # EXCLUDE_IN_GITEE_PAGES
   - search.md     # EXCLUDE_IN_GITEE_PAGES
