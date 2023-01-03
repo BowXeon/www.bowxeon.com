@@ -6,7 +6,7 @@ RUN sed -i 's/# EXCLUDE_IN_DOCKER//' _config.yml \
     && sed -i "s/COPYRIGHT_YEAR/$copy_year/" _config.yml \
     && echo "---" > index.md \
     && echo "layout: default" >> index.md \
-    && echo "title: {{ site.slogan }}" >> index.md \
+    && echo "title: 让你的保险更保险" >> index.md \
     && echo "sitemap: false" >> index.md \
     && echo "---" >> index.md \
     && echo "" >> index.md \
