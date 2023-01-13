@@ -6,11 +6,11 @@
         <div class="grid">
             <div class="footer__links">
             </div>
-            {% assign buildAt = "now" | date: "%Y-%m-%d" %}
+            {% assign buildDay = "now" | date: "%Y-%m-%d" %}
             {% assign copyYear = "now" | date: "%Y" %}
             <span class="footer__attribution-line--copyright hc-footer-font-color">
                 <span class="no-print">
-                    <i18n-message i18nkey="">Build at {{ buildAt }}</i18n-message>
+                    <i18n-message i18nkey="">Build on {{ buildDay }}</i18n-message>
                     •
                 </span>
                 <i18n-message i18nkey="footer.copyright.label"
@@ -29,10 +29,11 @@
                     </a>
                     &amp;
                     <a href="https://office.bowxeon.com" target="_blank" rel="noopener">
-                        <strong>真心话险事务所</strong>
+                        <strong>真心话险保险经纪事务所</strong>
                     </a>
 
                     <span id="vp-js-cookies__reset-link"></span>
+                    •
                 </span>
                 <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">{{ site.beian }}</a>
             </span>
