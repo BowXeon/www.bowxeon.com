@@ -48,7 +48,7 @@
             </h1>
             {% assign latestPost = site.posts[0] %}
             <div class="flex flex-flow auto-rows-fr flex-wrap">
-                <hr>
+                <hr style="margin-bottom: 0px;">
                 <div class="flex">
                     <article role="article">
                         <header>
@@ -80,22 +80,19 @@
                                 </div>
                             </div>
                             <h1 class="vp-article__heading article__heading" role="heading">
-                                <span class=""><a href="{{ latestPost.url }}">{{ latestPost.title }}</a></span>
+                                <span class="">{{ latestPost.title }}</span>
                             </h1>
                         </header>
                         <section class="page" id="content" role="main">
                             <div id="main-content" class="wiki-content article__content js-tocBot-content">
-                                {{ latestPost.content }}
+                                {{ latestPost.excerpt }}
+                                <p>...... </p>
                             </div>
                         </section>
-                    </article>
-                    <div class="vp-article__aside-right flex-none w-1/6 article__toc hidden xl:block no-print">
-                        <div class="vp-scrollable-container vp-scrollable-container--hidden-scrollbars">
-                            <div class="js-tocBot">
-                                <ol class="toc-list"></ol>
-                            </div>
+                        <div>
+                            <span><a href="{{ latestPost.url }}">点击阅读全文</a></span>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
