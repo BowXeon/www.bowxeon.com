@@ -23,7 +23,7 @@ email: service@bowxeon.com
 description: >- # this means to ignore newlines until "baseurl:"
   独立保险经纪人 - 真心话说保险
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.bowxeon.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://candy.bowxeon.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: seoktaehyeon
 
 # Build settings
@@ -70,15 +70,15 @@ exclude:
   - author/       # EXCLUDE_IN_GITEE_PAGES
 
 path:
- css: "//bowxeon.gitee.io/www.bowxeon.com/assets/css"
- js: "//bowxeon.gitee.io/www.bowxeon.com/assets/js"
- img: "//bowxeon.gitee.io/www.bowxeon.com/assets/img"
- posts: "//bowxeon.gitee.io/www.bowxeon.com/assets/posts"
- fonts: "//www.bowxeon.com/assets/fonts"
+ css: "//bowxeon.gitee.io/candy.bowxeon.com/assets/css"
+ js: "//bowxeon.gitee.io/candy.bowxeon.com/assets/js"
+ img: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img"
+ posts: "//bowxeon.gitee.io/candy.bowxeon.com/assets/posts"
+ fonts: "//candy.bowxeon.com/assets/fonts"
  logo:
-   favicon: "//bowxeon.gitee.io/www.bowxeon.com/assets/img/favicon.png"
-   header: "//bowxeon.gitee.io/www.bowxeon.com/assets/img/logo_text_white.svg"
-   footer: "//bowxeon.gitee.io/www.bowxeon.com/assets/img/logo_text.svg"
+   favicon: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img/favicon.png"
+   header: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img/logo_text_white.svg"
+   footer: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img/logo_text.svg"
 
 theme_color_header: "#395ca3"
 theme_color_footer: "#f0f0f0"

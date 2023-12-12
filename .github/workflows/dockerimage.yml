@@ -6,7 +6,7 @@ on:
 env:
   IMG_REPO: bxwill
   IMG_NAME: bxs
-  IMG_TAG: www-latest
+  IMG_TAG: candy-latest
 
 jobs:
 
