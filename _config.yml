@@ -75,9 +75,9 @@ path:
  img: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/img"
  posts: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/posts/candy"
  logo:
-   favicon: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/assets/img/candy/favicon.png"
-   header: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/assets/img/candy/logo_text_white.svg"
-   footer: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img/candy/logo_text.svg"
+   favicon: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/img/candy/favicon.png"
+   header: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/img/candy/logo_text_white.svg"
+   footer: "//bowxeon.gitee.io/candy.bowxeon.com/img/candy/logo_text.svg"
 
 theme_color_header: "#395ca3"
 theme_color_footer: "#f0f0f0"
