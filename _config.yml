@@ -77,7 +77,7 @@ path:
  logo:
    favicon: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/img/candy/favicon.png"
    header: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/img/candy/logo_text_white.svg"
-   footer: "//bowxeon.gitee.io/candy.bowxeon.com/img/candy/logo_text.svg"
+   footer: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/img/candy/logo_text.svg"
 
 theme_color_header: "#395ca3"
 theme_color_footer: "#f0f0f0"
