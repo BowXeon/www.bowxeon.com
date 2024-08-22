@@ -48,37 +48,36 @@ excerpt_separator: <!--more-->
 exclude:
   - .gitignore
   - .github
+  - .git
   - Gemfile
   - tool/
-# EXCLUDE_IN_DOCKER  - assets/css/
-# EXCLUDE_IN_DOCKER  - assets/js/
-# EXCLUDE_IN_DOCKER  - assets/img/
-# EXCLUDE_IN_DOCKER  - assets/posts/
-  - assets/fonts  # EXCLUDE_IN_GITEE_PAGES
-  - _layouts      # EXCLUDE_IN_GITEE_PAGES
-  - _includes     # EXCLUDE_IN_GITEE_PAGES
-  - pagetree.json # EXCLUDE_IN_GITEE_PAGES
-  - 404.md        # EXCLUDE_IN_GITEE_PAGES
-  - search.md     # EXCLUDE_IN_GITEE_PAGES
-  - search.json   # EXCLUDE_IN_GITEE_PAGES
-  - insurance/    # EXCLUDE_IN_GITEE_PAGES
-  - accident/     # EXCLUDE_IN_GITEE_PAGES
-  - medical/      # EXCLUDE_IN_GITEE_PAGES
-  - critical/     # EXCLUDE_IN_GITEE_PAGES
-  - life/         # EXCLUDE_IN_GITEE_PAGES
-  - group/        # EXCLUDE_IN_GITEE_PAGES
-  - author/       # EXCLUDE_IN_GITEE_PAGES
+  - assets/js/
+  - assets/img/
+  - assets/posts/
+  # - assets/fonts  # EXCLUDE_IN_GITEE_PAGES
+  # - _layouts      # EXCLUDE_IN_GITEE_PAGES
+  # - _includes     # EXCLUDE_IN_GITEE_PAGES
+  # - pagetree.json # EXCLUDE_IN_GITEE_PAGES
+  # - 404.md        # EXCLUDE_IN_GITEE_PAGES
+  # - search.md     # EXCLUDE_IN_GITEE_PAGES
+  # - search.json   # EXCLUDE_IN_GITEE_PAGES
+  # - insurance/    # EXCLUDE_IN_GITEE_PAGES
+  # - accident/     # EXCLUDE_IN_GITEE_PAGES
+  # - medical/      # EXCLUDE_IN_GITEE_PAGES
+  # - critical/     # EXCLUDE_IN_GITEE_PAGES
+  # - life/         # EXCLUDE_IN_GITEE_PAGES
+  # - group/        # EXCLUDE_IN_GITEE_PAGES
+  # - author/       # EXCLUDE_IN_GITEE_PAGES
 
 path:
- css: "//bowxeon.gitee.io/candy.bowxeon.com/assets/css"
- js: "//bowxeon.gitee.io/candy.bowxeon.com/assets/js"
- img: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img"
- posts: "//bowxeon.gitee.io/candy.bowxeon.com/assets/posts"
- fonts: "//candy.bowxeon.com/assets/fonts"
+ css: "/assets/css"
+ js: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/js"
+ img: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/img"
+ posts: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/posts/candy"
  logo:
-   favicon: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img/favicon.png"
-   header: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img/logo_text_white.svg"
-   footer: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img/logo_text.svg"
+   favicon: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/assets/img/candy/favicon.png"
+   header: "//bowxeon-1303247615.cos.ap-shanghai.myqcloud.com/assets/img/candy/logo_text_white.svg"
+   footer: "//bowxeon.gitee.io/candy.bowxeon.com/assets/img/candy/logo_text.svg"
 
 theme_color_header: "#395ca3"
 theme_color_footer: "#f0f0f0"

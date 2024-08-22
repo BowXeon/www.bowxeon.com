@@ -3,11 +3,6 @@ name: Docker Image CI
 on:
   - push
 
-env:
-  IMG_REPO: bxwill
-  IMG_NAME: bxs
-  IMG_TAG: candy-latest
-
 jobs:
 
   build:
@@ -16,17 +11,21 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: true
+    - name: Login Docker
+      run: |
+        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
     - name: Build the Docker image
       run: |
-        echo -e "\n"
-        echo -e "登陆 Docker"
-        echo -e "\n"
-        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
-        echo -e "\n"
-        echo -e "构建镜像 ${IMG_REPO}/${IMG_NAME}:${IMG_TAG}"
-        echo -e "\n"
-        docker build . --file Dockerfile --tag ${IMG_REPO}/${IMG_NAME}:${IMG_TAG}
-        echo -e "\n"
-        echo -e "推送镜像 ${IMG_REPO}/${IMG_NAME}:${IMG_TAG}"
-        echo -e "\n"
-        docker push ${IMG_REPO}/${IMG_NAME}:${IMG_TAG}
+        docker build . --file Dockerfile --tag ${{ secrets.DOCKER_REPO }}/${{ secrets.DOCKER_IMG }}:${{ secrets.IMG_TAG }}
+    - name: Push the Docker image
+      run: |
+        docker push ${{ secrets.DOCKER_REPO }}/${{ secrets.DOCKER_IMG }}:${{ secrets.IMG_TAG }}
+    - name: Re-Tag the Docker image of Alibaba Registry
+      run: |
+        docker tag ${{ secrets.DOCKER_REPO }}/${{ secrets.DOCKER_IMG }}:${{ secrets.IMG_TAG }} ${{ secrets.ALI_DC_REGISTRY }}/${{ secrets.ALI_DC_REPO }}/${{ secrets.DOCKER_IMG }}:${{ secrets.IMG_TAG }}
+    - name: Login Alibaba Registry
+      run: |
+        echo "${{ secrets.ALI_DC_PASSWORD }}" | docker login -u ${{ secrets.ALI_DC_USER }} --password-stdin ${{ secrets.ALI_DC_REGISTRY }}
+    - name: Push the Alibaba Docker image
+      run: |
+        docker push ${{ secrets.ALI_DC_REGISTRY }}/${{ secrets.ALI_DC_REPO }}/${{ secrets.DOCKER_IMG }}:${{ secrets.IMG_TAG }}
